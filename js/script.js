@@ -53,6 +53,15 @@ function renderTaskList() {
 
 // Todo: create a function to handle adding a new task
 function handleAddTask(event){
+    event.preventDefault();
+
+    const task = {
+        id: generateTaskId(),
+        title: $('#taskTitle').val(),
+        description: $('#taskDescription').val(),
+        deadline: $('#taskDeadline').val(),
+        status: 'to-do'
+    };
 
 }
 
